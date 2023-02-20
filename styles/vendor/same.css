@@ -1,0 +1,30 @@
+.section-arrow{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 157px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 2;
+}
+.section-arrow i{
+    color: #42b733;
+    font-size: 22px;
+}
+.section-arrow i:hover{
+    transform: translateY(25%);
+    transition: .3s;
+}
+.section-padding{
+    padding: 50px 15%;
+}
+.numbers-down{
+    bottom: 0 ;
+}
+.numbers-down i{
+    color: #fff;
+}

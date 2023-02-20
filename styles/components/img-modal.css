@@ -1,0 +1,41 @@
+#img-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.img-modal-content{
+    width: 50%;
+    margin: 0 auto;
+}
+.img-modal-content img{
+    width: 100%;
+}
+.modal-btn{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.modal-prev-btn{
+    left: 5%;
+}
+.modal-next-btn{
+    right: 5%;
+}
+.close-btn{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    top: 5%;
+    right: 5%;
+}

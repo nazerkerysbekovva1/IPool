@@ -1,0 +1,149 @@
+.gallery{
+    padding: 40px 0px 129px;
+    text-align: center;
+    position: relative;
+}
+.gallery h2{
+    line-height: 61px;
+    font-size: 35px;
+    font-weight: 500;
+    color: #42464f;
+    text-transform: uppercase;
+}
+.gallery-inner{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    width: 100%;
+    /* margin-bottom: -10px;
+    margin-left: -5px;
+    margin-right: -5px; */
+}
+.gallery-block{
+    width: 37.5%;
+}
+.block{   
+    width: 100%;
+    display: flex;
+    height: 50%;
+    flex-wrap: wrap;
+}
+.small{
+    width: 35%;
+    height: 100%;
+}
+.big{
+    width: 65%;
+    height: 100%;
+    position: relative;
+}
+.small>div {
+    height: 50%;
+    position: relative;
+}
+.big>div{
+    height: 100%;
+    position: relative;
+}
+.small img{
+    width: 100%;
+    z-index: 2;
+    height: 100%;
+    position: relative;
+}
+.big img{
+    width: 100%;
+    z-index: 2;
+    height: 100%;
+    position: relative;
+}
+.gallery-block-avg{
+    width: 25%;
+}
+.avgs{   
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+.avgs div{
+    width: 50%;
+    height: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.avgs div img{
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+.avgb{
+    width: 100%;
+    position: relative;
+}
+.avgs img{   
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+.avgb img{
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+.zoom{
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0 , 0 , 0 , 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    z-index: 1;
+}
+button{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #fff;
+    background-color: #42b773;
+    padding: 6px 14px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: solid #42b773;
+    z-index: 1;
+}
+.small div:hover .zoom{
+    z-index: 3;
+    transition: 0.3s;
+}
+.big div:hover .zoom{
+    z-index: 3;
+    transition: 0.3s;
+}
+.gallery::after{
+    content: " ";
+    background: url("../../images/bottom-green.png");
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 155px;
+    height: 67px;
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width: 750px){
+    .gallery-block{
+        width: 100%;
+    }
+    .gallery-block-avg{
+        width: 100%;
+    }
+}
